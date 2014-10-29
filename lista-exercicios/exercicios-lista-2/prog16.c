@@ -12,11 +12,14 @@
 
 int main()
 	{	
-	int n, total;
-	printf("Digite um número inteiro: ");
-	scanf("%d", &n);
-	
-	total = ( ( 1 + n ) * n ) / 2;
+	unsigned int a1, an, total;
+	printf("Digite um número inteiro (a1): ");
+	scanf("%u", &a1);
+	printf("Digite outro número inteiro (an): ");
+	scanf("%u", &an);	
+
+
+	total = ( ( ( 1 + an ) * an ) / 2 ) - ( ( ( 1 + a1 ) * a1 ) / 2 ) ;
 
 	printf("A soma aritmética é: %d\n", total);
 
