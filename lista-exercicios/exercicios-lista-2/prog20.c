@@ -17,15 +17,45 @@
 #include <stdio.h>
 
 int main(){
-	int hchegada, mchegada, hsaida, msaida, htotal;
-	float valortotal;
+	int hchegada, mchegada, hsaida, msaida, htotal, mtotal, i;
+	float valortotal = 0;
 	
 	printf("Digite o horário de entradade no formato hh mm : ");
 	scanf("%d %d", &hchegada, &mchegada );
 	printf("Difite o horário de saída no formato hh mm : ");
 	scanf("%d %d", &hsaida, &msaida );
+	
+	if( hchegada == hsaida ){
+		valortotal = 1.00;
+	}
+	else if( hchegada < hsaida ){
+		htotal = hsaida - hchegada;
+		mtotal = ( msaida - mchegada )/60;
+		htotal += mtotal;
+		for(i=0; i <= htotal; i++){
+			if( i < 2 )
+				valortotal += 1.00;
+			if( (i > 2) && (i<=4) )
+				valortotal += 1.40;
+			if( i>=5 )
+				valortotal += 2.00;
+		}
+	}
+	else{
+		htotal = (hsaida - hchegada) + 24;
+		mtotal = (msaida - mchegada)/60;
+		htotal += mtotal;
+		for(i=0; i <= htotal; i++){
+			if( i < 2 )
+				valortotal += 1.00;
+			if( (i > 2) && (i<=4) )
+				valortotal += 1.40;
+			if( i>=5 )
+				valortotal += 2.00;
+		}
+	}
 
-
-
+	printf("\t%d %d\n", htotal, mtotal);
+	printf("O total a ser pago é de R$%.2f\n", valortotal);
 	return 0;
 }

@@ -14,7 +14,9 @@ int main(){
 	}
 
 	for ( i = 0; i < 3; i++ ){
+		printf("%d\n", i);
 		for ( j = 0; j < 3 - 1; j++ ){
+			printf("\t%d\n", j);
 			if ( numeros[j] > numeros[j + 1] ){
 				tmp = numeros[j];
 				numeros[j] = numeros[j + 1];
