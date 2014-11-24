@@ -19,8 +19,7 @@ double getavg( int arr[], int size )
 
 /* Retorna um vetor com o maior valor em [0]
  * e menor valor em [1]*/
-int * getmaxmin( int *arr, int size )
-{
+int * getmaxmin( int *arr, int size ) {
     int *maxmin = malloc(4*sizeof(int));
     maxmin[1] = arr[0];
     for (int i = 0; i < size; ++i)
@@ -39,3 +38,11 @@ int * getmaxmin( int *arr, int size )
 
     return maxmin;
 }
+
+/* todo
+ *
+ * function that creates a randon matrix
+ * function that give random values to giben matrix
+ * function that return the result of the product from array itemsh
+ *
+ * */
