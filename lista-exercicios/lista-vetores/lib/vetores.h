@@ -3,5 +3,5 @@
 
 double getavg( int arr[], int size );
 
-int * getmaxmin( int arr[], int size );
+
 #endif
