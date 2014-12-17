@@ -96,8 +96,9 @@ int main(int argc, char **argv)
 	{
 	    ++contagem;
 	    printf("Nome: %s\n"
-		    "Salário: %.2f\n",
-		    self->nome, self->salario);
+		    "Salário: %.2f\n"
+		    "Filhos: %d\n",
+		    self->nome, self->salario, self->filhos);
 	}
 	if (self->filhos >= 2 && self->salario < 1500)
 	{
@@ -106,6 +107,7 @@ int main(int argc, char **argv)
 	self = self->next;
     }
     fclose(dados);
+    fclose(nomes);
 
     printf("Média salarial: %.2f\n"
 	    "%d ganham mais que a média!\n", media, contagem );
