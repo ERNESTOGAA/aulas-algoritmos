@@ -66,9 +66,7 @@ void cadastrarAway ( funcionario **func, FILE *nomes )
 
 int main(int argc, char **argv)
 {
-    FILE *nomes;
-    nomes = fopen("names.txt", "r" );
-
+    FILE *nomes = fopen("names.txt", "r" );
     FILE *dados = fopen( "dados.txt", "w");
 
     int i, contagem=0;
