@@ -1,6 +1,6 @@
 /* http://www.ioccc.org/years.html */
 
-#include "stdio.h"
+#include <stdio.h>
 #define	e 3
 #define	g (e/e)
 #define	h ((g+e)/2)
