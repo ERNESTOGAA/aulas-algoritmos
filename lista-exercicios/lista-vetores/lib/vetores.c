@@ -48,32 +48,32 @@ int * createIntMatrix ( int size )
 
 void randomIntFill ( int *arr, int size, int factor)
 {
-    int i;
-    srand(time(NULL));
-    for (i = 0; i < size; ++i)
-    {
-	arr[i] = rand() % factor;    
-    }
+  int i;
+  srand(time(NULL));
+  for (i = 0; i < size; ++i)
+  {
+    arr[i] = rand() % factor;    
+  }
 }
 
 int isPrime ( int number )
 {
-    int i, prime = 0, counter = 0;
-    if(number < 2)
+  int i, prime = 0, counter = 0;
+  if(number < 2)
+  {
+    return prime+1;
+  }
+  else
+  {
+    for (i = 1; i <= number; ++i)
     {
-	return prime+1;
+      if ( number % i == 0 )
+      {
+        counter++;
+      }
     }
-    else
-    {
-	for (i = 1; i <= number; ++i)
-	{
-	    if ( number % i == 0 )
-	    {
-		counter++;
-	    }
-	}
-	return counter > 2 ? prime+1 : prime;
-    }
+    return counter > 2 ? prime+1 : prime;
+  }
 }
 
 
