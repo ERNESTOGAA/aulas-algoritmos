@@ -1,0 +1,5 @@
+Xbox 360	699.99
+Controle	124.00
+Computador	1124.00
+Arduino	74.50
+Celular	435.50

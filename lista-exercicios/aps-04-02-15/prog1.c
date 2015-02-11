@@ -40,7 +40,7 @@ void trocaMatriz ( int **matriz )/*{{{*/
       }
     }
   }
-  
+
 }/*}}}*/
 
 void mostrarAluno( Aluno aluno )
@@ -81,7 +81,6 @@ int main(int argc, char *argv[])
     }
   }
 
-
   Aluno aluno;
   strcpy(aluno.nome, "Henrique");
   strcpy(aluno.curso, "BCC");
@@ -92,7 +91,7 @@ int main(int argc, char *argv[])
   aluno.notas[3] = 3;
 
   mostrarAluno( aluno );
-  
+
   for (i = 0; i < 10; ++i)
   {
     for (j = 0; j < 10; ++j)
@@ -101,8 +100,8 @@ int main(int argc, char *argv[])
     }
     printf("\n");
   }
-    printf("\n\n\n");
-  
+  printf("\n\n\n");
+
   trocaMatriz( matriz );
   for (i = 0; i < 10; ++i)
   {
