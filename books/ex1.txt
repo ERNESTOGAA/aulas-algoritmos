@@ -1,0 +1,58 @@
+=============================================================================
+=              
+                       EXERCISES FROM CHAPTER 01
+=
+=============================================================================
+
+
+1)  In comparison with a database this book provides means to read information,
+    wich can be tracked through summary/index. What is missing is the ability
+    to Update, Create and Delete values.
+    This book also provides a greate portability, ease of use and low price
+
+2)  We can fetch throught the content by index, in wich we can see what topics
+    we talk about in what pages they are. We can also use the word index in wich
+    we can get the page by knowing the term name.
+
+3)  CRUD stands for:
+        Create:
+              The ability to create new data to the database;
+        Read:
+              The ability to fetch and get all the data that has been in the
+              database;
+        Update:
+              The ability to change some data and update the database so the
+              new updated data can also be read;
+        Delete:
+              The ability to delete data;
+
+4)  A chalkboard provides the full CRUD features, but it almost have no portability, 
+    as you can't walk with a chalkboard on your pocket to consult whenever you want.
+    It's worthwhile to talk about the security, that on the chalkboard database data
+    can be easely corrupted;
+
+5)  It compares by the fact that you can fetch data by creating a index, it's a good
+    approach but as the database gets bigger more time will be consumed to return
+    simple data;
+
+6)  ACID stants for:
+    Atomicity:
+      Every task should be finished in order to data be release to other users or task.
+      Wich means that every task have their on protected enviroment, like when you write
+      down some data in a notebook, nobody should have access while you are doing the task;
+
+    Consistency:
+      Consistency is the property that grants data to be right along the database, where
+      unfinished requests shouldn't interfer with the datebase and by that eleminate errors
+      that may happen during the processing of the work to be done;
+
+    Isolation:
+      In order to have consistency we need that the data involved in the resquest be outside
+      the access from other users or services until the task in complete;
+    
+    Durability:
+      We need to provide backup and means to grant the life of data according to the needs
+
+7) Cindy transfers 25 to Alice and 50 to Bob
+   Alice transfers 125 to Bob
+   Bob transfers 150 Cindy 
