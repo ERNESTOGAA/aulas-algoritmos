@@ -1,0 +1,3 @@
+a) A função retorna o endereço de uma varíavel local criada no escopo da função, o que significa que ela pode ser deletada após a função terminar.
+
+b) A função retorna o endereço de um espaço alocado dinamicamente para receber um inteiro, quando a função terminar de ser executada o valor da variavel retornada continuará no mesmo endereço sem correr o risco de sofrer alguma alteraçãoinesperada.
