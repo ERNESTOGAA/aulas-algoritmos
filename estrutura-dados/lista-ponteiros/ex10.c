@@ -8,6 +8,6 @@ int main( int argc, char** argv )
 {
 		char s1[] = "testing!";
 
-		printf("%d\n", stringCount(s1));
+		printf("%d\n", recursiveCount(s1));
 		return 0;
 }

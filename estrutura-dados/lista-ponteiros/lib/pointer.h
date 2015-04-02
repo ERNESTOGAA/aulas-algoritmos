@@ -37,4 +37,8 @@ void printString( char* string );
 
 void copyString( char* dest, char* src );
 
+int recursiveCount( char* string );
+
+void recursiveCopy( char* dest, char* src );
+
 #endif

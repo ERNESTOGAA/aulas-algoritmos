@@ -7,7 +7,7 @@
 
 int main( int argc, char** argv )
 {
-		char a[] = {"Teste de cópia!"};/*{{{*/
+		char a[] = {"Teste de cópia!"};
 		char* b;
 
 		b = (char*) cloneString( a );
@@ -15,5 +15,5 @@ int main( int argc, char** argv )
 		printf("String Original: %s\n", a );
 		printf("String Copiada: %s\n", b );
 
-		return 0;/*}}}*/
+		return 0;
 }

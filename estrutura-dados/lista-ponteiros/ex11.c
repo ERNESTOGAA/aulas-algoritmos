@@ -11,7 +11,7 @@ int main( int argc, char** argv )
 
 		printf("s1:%s\ns2:%s\n", s1,s2);
 
-		copyString( s1, s2 );
+		recursiveCopy( s1, s2 );
 		
 		printf("s1:%s\ns2:%s\n", s1,s2);
 

@@ -251,8 +251,6 @@ int* joinVector( int* v1, size_t sizeV1, int* v2, size_t sizeV2 )/*{{{*/
 	return vfinal;
 }/*}}}*/
 
-void splitVector( int* vector, int limit, int vectorSize ) {}
-
 void printString( char* string )/*{{{*/
 {
 	int i=0;
@@ -265,6 +263,32 @@ void printString( char* string )/*{{{*/
 		printf("%c", string[i]);
 		++i;
 	}
+}/*}}}*/
+
+int recursiveCount( char* string )/*{{{*/
+{
+		int i = 1;
+		if( string[i] != '\0') 
+		{
+			return i += recursiveCount( (string+1) );
+		}
+		else{
+				return i;
+		}
+}/*}}}*/
+
+void recursiveCopy( char* dest, char* src )/*{{{*/
+{
+		int i = 0;
+		if( src[i] != '\0' )
+		{
+				dest[i] = src[i];
+				recursiveCopy( (dest+1), (src+1) );
+		}
+		else
+		{
+				*dest = '\0';
+		}
 }/*}}}*/
 
 void copyString( char* dest, char* src )/*{{{*/
