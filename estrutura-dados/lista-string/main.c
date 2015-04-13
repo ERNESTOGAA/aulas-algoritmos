@@ -3,10 +3,8 @@
 #include<string.h>
 
 #define POS 2
-#define CAPACIDADE 2
-#define FATOR_REDUCAO 1.0
-
-#define STUBBED(x) printf("STUBBED: %s\n", x)
+#define CAPACIDADE 5
+#define FATOR_REDUCAO 0.8
 
 // Structs and Functions/*{{{*/
 
@@ -241,6 +239,7 @@ void  imprime_lista( Lista_string* l )/*{{{*/
   }
   printf("\n");
 }/*}}}*//*}}}*/
+
 
 int main() {
 
